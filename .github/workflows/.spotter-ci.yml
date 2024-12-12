@@ -14,8 +14,8 @@ jobs:
       with:
         paths: .
         exclude_values: false
-#        exclude_metadata: false
-        ansible_version: 2.14
+        exclude_metadata: false
+        ansible_version: 2.17
       env:
         SPOTTER_API_TOKEN: ${{ secrets.SPOTTER_API_TOKEN }}
 
