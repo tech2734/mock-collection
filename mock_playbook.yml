@@ -1,0 +1,8 @@
+---
+- name: Mock playbook for testing
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Run a mock role from a mock collection
+      ansible.builtin.import_role:
+        name: mock_user_role
