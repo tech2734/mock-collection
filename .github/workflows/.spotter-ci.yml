@@ -11,8 +11,8 @@
         uses: xlab-steampunk/spotter-action@master  
         with: 
           paths: .   
-          exclude_values: true   
-          exclude_metadata: true   
+          exclude_values: false   
+          exclude_metadata: false   
           ansible_version: 2.14   
         env: 
           SPOTTER_API_TOKEN: ${{ secrets.SPOTTER_API_TOKEN }}
