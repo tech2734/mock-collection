@@ -1,0 +1,17 @@
+  yaml  
+  name: Steampunk Spotter  
+  on: push   
+  jobs:   
+    spotter-scan:   
+      runs-on: ubuntu-latest   
+      steps:   
+      - name: Checkout repository   
+        uses: actions/checkout@master  
+   
+      - name: Scan Ansible content   
+      uses: xlab-steampunk/spotter-action@master  
+      with: paths: .   
+      include_values: true   
+      include_metadata: true   
+      ansible_version: 2.14   
+      env: SPOTTER_API_TOKEN: ${{ secrets.SPOTTER_API_TOKEN }}
