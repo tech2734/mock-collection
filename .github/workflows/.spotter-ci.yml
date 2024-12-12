@@ -9,7 +9,8 @@
    
       - name: Scan Ansible content   
       uses: xlab-steampunk/spotter-action@master  
-      with: paths: .   
+      with: 
+        paths: .   
       include_values: true   
       include_metadata: true   
       ansible_version: 2.14   
