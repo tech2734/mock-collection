@@ -1,4 +1,3 @@
-  yaml  
   name: Steampunk Spotter  
   on: push   
   jobs:   
