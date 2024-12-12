@@ -14,4 +14,5 @@
       include_values: true   
       include_metadata: true   
       ansible_version: 2.14   
-      env: SPOTTER_API_TOKEN: ${{ secrets.SPOTTER_API_TOKEN }}
+      env: 
+        SPOTTER_API_TOKEN: ${{ secrets.SPOTTER_API_TOKEN }}
