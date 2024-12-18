@@ -15,7 +15,7 @@
       ansible.builtin.user:
         name: "{{ item.username }}"
         password: "{{ item.password | password_hash('sha512') }}"
-        home: "{{ home_dir }}"
+        home: "{{ customer_home_dir }}"
         state: present
       loop: "{{ users }}"
 
