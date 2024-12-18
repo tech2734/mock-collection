@@ -3,4 +3,4 @@
 
 customer_id: 'customer_001'
 customer_email: 'customer@example.com'
-customer_home_dir: '/home/customer1'
+customer_home_dir: /home/customer1
