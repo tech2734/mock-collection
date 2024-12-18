@@ -8,13 +8,14 @@
       - username: customer1
         password: 'customer1_password'
       - username: customer2
-        password: 'customer2_password'
+        password: 'customer2_password' 
+      - home_dir: '/home/customer1'
   tasks:
     - name: Add user accounts
       ansible.builtin.user:
         name: "{{ item.username }}"
         password: "{{ item.password | password_hash('sha512') }}"
-        home: "{{ customer_home_dir }}"
+        home: "{{ home_dir }}"
         state: present
       loop: "{{ users }}"
 
