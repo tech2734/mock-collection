@@ -1,2 +1,3 @@
 ---
 # defaults file for mock_azure_role
+home_dir: /home/myusername123/pyvirt/azure/bin/python
