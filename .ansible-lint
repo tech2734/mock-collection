@@ -1,0 +1,11 @@
+---
+offline: false
+# mock_modules
+
+# custom linting rules
+
+# skip_list
+
+# exclude_paths
+exclude_paths:
+  - .github/workflows
